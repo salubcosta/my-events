@@ -14,4 +14,9 @@ class Category extends Model
         'description',
         'slug'
     ];
+
+    public function events()
+    {
+        return $this->belongsToMany(Event::class);
+    }
 }
